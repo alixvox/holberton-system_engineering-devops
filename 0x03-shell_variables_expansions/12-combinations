@@ -1,2 +1,2 @@
 #!/bin/bash
-echo {a..z}{{a..n},{p..z}} | tr ' ' '\n'
+echo {{a..n}{a..z},o{{a..n},{p..z}},{p..z}{a..z}} | tr ' ' '\n'
