@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+# This script displays numbers from 1 to 100.
+
 i='0'
 while ((i < 100))
 do

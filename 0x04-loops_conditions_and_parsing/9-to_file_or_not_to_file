@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+# This script gives you information about the holbertonschool file.
+
 test=./holbertonschool
 if [ -e "$test" ]
 then
