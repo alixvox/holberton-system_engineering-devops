@@ -15,9 +15,6 @@ then
 	if [ -h $test ]
 	then
 		echo ''
-	elif [ -b $test ]
-	then
-		echo ''
 	elif [ -f $test ]
 	then
 		echo "holbertonschool is a regular file"
