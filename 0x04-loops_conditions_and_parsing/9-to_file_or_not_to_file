@@ -12,10 +12,10 @@ then
 		echo "holbertonschool file is not empty"
 	fi
 
-	if [ -h $test ]
+	if [ -h "$test" ]
 	then
-		echo ''
-	elif [ -f $test ]
+		echo "hey"
+	elif [ -f "$test" ]
 	then
 		echo "holbertonschool is a regular file"
 	fi
