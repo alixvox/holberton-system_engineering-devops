@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-ps -o pid | tail -n 1
+echo "$$"
