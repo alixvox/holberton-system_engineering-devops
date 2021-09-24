@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# This script kills the process in script 4-to_infinity_and_beyond.
+# This script kills 4-to_infinity_and_beyond
 
 pgrep -f 4-to_infinity_and_beyond | xargs kill
