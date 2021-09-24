@@ -1,3 +1,7 @@
 #!/usr/bin/env bash
+<<<<<<< HEAD
 # This command 
+=======
+# This script displays its own PID.
+>>>>>>> 021cede5ee4030da2f0167e0f1540ab37d56f7f0
 echo $BASHPID 
