@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Sets up an nginx server with an html file & redirects it
+# to a "301 Moved Permanently"
+sudo apt-get -y update
+sudo apt-get install -y nginx
+sudo ufw allow 'Nginx HTTP'
+sudo sh -c 'echo "Hello World!" > /var/www/html/index.html'
+target="^\tlocation / {"
+replace="\tlocation /redirect_me {\n\t\treturn 301 \$scheme://dndbeyond.com;\n\t}\n\n\tlocation / {"
+sudo sed -i "s@$target@$replace@" /etc/nginx/sites-available/default
+sudo service nginx restart
