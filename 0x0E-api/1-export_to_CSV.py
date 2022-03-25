@@ -25,7 +25,7 @@ if __name__ == '__main__':
 
         # print information to output #
                 print("Employee {} is done with tasks ({}/{}):".format(
-                    user.get("name"), len(completed), len(to_do)))
+                    user.get("name"), len(completed), len(todo)))
                 for title in completed:
                     print("\t {}".format(title))
 
