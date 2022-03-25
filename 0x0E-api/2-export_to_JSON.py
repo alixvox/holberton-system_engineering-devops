@@ -9,7 +9,7 @@ import json
 
 if __name__ == '__main__':
 
-    # check that arg passed is an int
+    # check that arg passed is an int #
     if sys.argv[1].isdigit:
         id = sys.argv[1]
         user = requests.get(
@@ -29,7 +29,7 @@ if __name__ == '__main__':
         for title in completed:
             print("\t {}".format(title))
 
-        # save info to a json file
+        # save info to a json file #
         with open("{}.json".format(id), 'w') as file:
             tasks = {id: [{
                 'task': x.get('title'),

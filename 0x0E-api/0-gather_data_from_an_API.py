@@ -8,7 +8,7 @@ import sys
 
 if __name__ == '__main__':
 
-    # check that arg passed is an int
+    # check that arg passed is an int #
     if sys.argv[1].isdigit:
         id = sys.argv[1]
         user = requests.get(
@@ -22,7 +22,7 @@ if __name__ == '__main__':
             if x.get("completed") is True:
                 completed.append(x.get("title"))
 
-        # print employee info
+        # print employee info #
         print("Employee {} is done with tasks({}/{}):".format(
             user.get("name"), len(completed), len(todo)))
         for title in completed:
