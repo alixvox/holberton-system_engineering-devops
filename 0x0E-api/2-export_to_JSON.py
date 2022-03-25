@@ -23,6 +23,12 @@ if __name__ == '__main__':
             if x.get("completed") is True:
                 completed.append(x.get("title"))
 
+        # print information to output #
+        print("Employee {} is done with tasks ({}/{}):".format(
+            user.get("name"), len(completed), len(to_do)))
+        for title in completed:
+            print("\t {}".format(title))
+
         # save info to a json file
         with open("{}.json".format(id), 'w') as file:
             tasks = {id: [{
