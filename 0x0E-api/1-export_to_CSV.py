@@ -2,7 +2,9 @@
 """ This module saves information about
 an employee's TODO list progress to a CSV file. """
 
-import requests, sys, csv
+import requests
+import sys
+import csv
 
 
 if __name__ == '__main__':

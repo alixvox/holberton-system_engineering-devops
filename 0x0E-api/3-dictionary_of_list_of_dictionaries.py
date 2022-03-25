@@ -2,7 +2,8 @@
 """ This module saves information about all
 employees' TODO list progress to a CSV file. """
 
-import requests, json
+import requests
+import json
 
 
 if __name__ == '__main__':
