@@ -2,8 +2,8 @@
 """ This module saves information about all
 employees' TODO list progress to a CSV file. """
 
-import requests
 import json
+import requests
 
 
 if __name__ == '__main__':
@@ -15,8 +15,7 @@ if __name__ == '__main__':
 
     # save info to a json file
     with open("todo_all_employees.json", 'w') as file:
-        todos_dict = {user.get('id'): [{
-                'task': x.get('title'),
+        todos_dict = {user.get('id'): [{'task': x.get('title'),
                 'username': user.get('username'),
                 'completed': x.get('completed')
             } for x in todos if user.get('id') == x.get('userID')
