@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# This script checks for and returns DNS info! #
+# shellcheck disable=SC2086
+
+if [ $# -eq 1 ]; then
+    domain="www.$1 lb-01.$1 web-01.$1 web-02.$1"
+else
+    domain="$2.$1"
+fi
+
+dig $domain | awk '/ANSWER SECTION/{getline; split($1,line,"."); print "The subdomain", line[1], "is a", $4, "record and points to", $5}'
